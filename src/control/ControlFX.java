@@ -3,6 +3,7 @@ package control;
 
 import java.io.IOException;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,7 +22,7 @@ public class ControlFX {
     void getStarted(ActionEvent event) throws IOException {
 		
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(MainFX.class.getResource("view/FreeSolo.fxml"));
+		loader.setLocation(MainFX.class.getResource("../vista/FreeSolo.fxml"));
 		page = loader.load();
 		
 		Stage sendStage = new Stage();
@@ -31,6 +32,11 @@ public class ControlFX {
         this.sendStage = sendStage;
         this.sendStage.show();
 
+    }
+	
+	@FXML
+    void cerrar(ActionEvent event) {
+		System.exit(0);
     }
 
 }
