@@ -51,7 +51,7 @@ public class MainFX extends Application {
 
 	/**
 	 * Returns the main stage.
-	 * @return
+	 * @return openStage
 	 */
 	public Stage getPrimaryStage() {
 		return openStage;
