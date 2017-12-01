@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlFX">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -60,11 +60,11 @@
                            <children>
                               <VBox alignment="TOP_CENTER" prefHeight="298.0" prefWidth="281.0" spacing="27.0" stylesheets="@../control/styles.css">
                                  <children>
-                                    <JFXTextField focusColor="#757575" labelFloat="true" promptText="FIRST NAME" unFocusColor="#dbdbdb" />
-                                    <JFXTextField focusColor="#757575" labelFloat="true" promptText="LAST NAME" unFocusColor="#dbdbdb" />
-                                    <JFXTextField focusColor="#757575" labelFloat="true" promptText="E-MAIL" unFocusColor="#dbdbdb" />
-                                    <JFXPasswordField focusColor="#757575" promptText="PASSWORD" unFocusColor="#dbdbdb" />
-                                    <JFXPasswordField focusColor="#757575" promptText="REPEAT PASSWORD" unFocusColor="#dbdbdb" />
+                                    <JFXTextField focusColor="#ff4081" labelFloat="true" promptText="FIRST NAME" unFocusColor="#dbdbdb" />
+                                    <JFXTextField focusColor="#ff4081" labelFloat="true" promptText="LAST NAME" unFocusColor="#dbdbdb" />
+                                    <JFXTextField focusColor="#ff4081" labelFloat="true" promptText="E-MAIL" unFocusColor="#dbdbdb" />
+                                    <JFXPasswordField focusColor="#ff4081" promptText="PASSWORD" unFocusColor="#dbdbdb" />
+                                    <JFXPasswordField focusColor="#ff4081" promptText="REPEAT PASSWORD" unFocusColor="#dbdbdb" />
                                  </children>
                               </VBox>
                            </children>
@@ -72,7 +72,7 @@
                         <HBox alignment="CENTER" layoutX="117.0" layoutY="486.0" prefHeight="108.0" prefWidth="457.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <children>
                               <JFXToggleButton text="Under 18 ?" toggleColor="#ff4081" />
-                              <JFXButton prefHeight="43.0" prefWidth="122.0" styleClass="mybutton" stylesheets="@styles.css" text="GET STARTED" textFill="#d2a694" />
+                              <JFXButton onAction="#getStarted" prefHeight="43.0" prefWidth="122.0" styleClass="mybutton" stylesheets="@styles.css" text="GET STARTED" textFill="#d2a694" />
                            </children>
                         </HBox>
                      </children>

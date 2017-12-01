@@ -1,8 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.BorderPane?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</BorderPane>
 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: #795548;">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="31.0" layoutX="124.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/images/Hamburger.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox alignment="CENTER" layoutY="59.0" prefHeight="341.0" prefWidth="166.0" style="-fx-background-color: WHITE; -fx-border-color: #795548 #795548; -fx-border-width: 0 2 0 0;">
+         <children>
+            <JFXButton prefHeight="27.0" prefWidth="186.0" text="All my files" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="188.0" text="Pdf" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="230.0" text="Music" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="212.0" text="Documents" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="227.0" text="Videos" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="203.0" text="Photos" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="167.0" text="Files" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="210.0" text="Account" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="235.0" text="Setting" textFill="#ff4081" />
+            <JFXButton prefHeight="27.0" prefWidth="193.0" text="Log out" textFill="#ff4081" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="186.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/carpeta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="289.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/carpeta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="391.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/carpeta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="289.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/carpeta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="391.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/carpeta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="186.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/carpeta.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

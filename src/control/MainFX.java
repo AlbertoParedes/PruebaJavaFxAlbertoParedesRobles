@@ -13,14 +13,18 @@ import javafx.stage.Stage;
 
 
 public class MainFX extends Application {
-
-	private Stage primaryStage;
+/**
+ * @author	Alberto Paredes
+ * @version 1.0
+ * 
+ */
+	private Stage openStage;
 	private BorderPane rootLayout;
 
 	@Override
 	public void start(Stage primaryStage) {
-		this.primaryStage = primaryStage;
-		this.primaryStage.setTitle("AddressApp");
+		this.openStage = primaryStage;
+		this.openStage.setTitle("AddressApp");
 
 		initRootLayout();
 		//showPersonOverview();
@@ -37,8 +41,8 @@ public class MainFX extends Application {
 			rootLayout = (BorderPane) loader.load();
 
 			Scene scene = new Scene(rootLayout);
-			primaryStage.setScene(scene);
-			primaryStage.show();
+			openStage.setScene(scene);
+			openStage.show();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -50,7 +54,7 @@ public class MainFX extends Application {
 	 * @return
 	 */
 	public Stage getPrimaryStage() {
-		return primaryStage;
+		return openStage;
 	}
 
 	public static void main(String[] args) {
