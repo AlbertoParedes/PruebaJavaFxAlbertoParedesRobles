@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.5971943887775552" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="300.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="408.0" fitWidth="372.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/images/freesolo.png" />
+                           </image>
+                        </ImageView>
+                        <Pane prefHeight="598.0" prefWidth="592.0" style="-fx-background-color: #d2a694aa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <VBox alignment="CENTER_LEFT" layoutX="103.0" layoutY="397.0" prefHeight="186.0" prefWidth="489.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label prefHeight="176.0" prefWidth="248.0" text="Create Your Own Account" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI Light" size="33.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" prefHeight="161.0" prefWidth="592.0" spacing="28.0">
+                                 <children>
+                                    <JFXButton prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;" text="ABOUT US" textFill="#d2a694" />
+                                    <JFXButton prefHeight="41.0" prefWidth="123.0" style="-fx-border-color: #fff; -fx-border-radius: 10px; -fx-border-width: 2;" text="SIGNIN" textFill="WHITE" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+                <AnchorPane maxWidth="600.0" minHeight="0.0" minWidth="300.0" prefHeight="160.0" prefWidth="300.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="37.0" layoutY="42.0" prefHeight="150.0" prefWidth="280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="115.0" prefWidth="115.0" style="-fx-background-color: white; -fx-background-radius: 100px;" text="A" textFill="#ff4081">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="84.0" layoutY="188.0" prefHeight="298.0" prefWidth="367.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="298.0" prefWidth="281.0" spacing="27.0" stylesheets="@../control/styles.css">
+                                 <children>
+                                    <JFXTextField focusColor="#757575" labelFloat="true" promptText="FIRST NAME" unFocusColor="#dbdbdb" />
+                                    <JFXTextField focusColor="#757575" labelFloat="true" promptText="LAST NAME" unFocusColor="#dbdbdb" />
+                                    <JFXTextField focusColor="#757575" labelFloat="true" promptText="E-MAIL" unFocusColor="#dbdbdb" />
+                                    <JFXPasswordField focusColor="#757575" promptText="PASSWORD" unFocusColor="#dbdbdb" />
+                                    <JFXPasswordField focusColor="#757575" promptText="REPEAT PASSWORD" unFocusColor="#dbdbdb" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="117.0" layoutY="486.0" prefHeight="108.0" prefWidth="457.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXToggleButton text="Under 18 ?" toggleColor="#ff4081" />
+                              <JFXButton prefHeight="43.0" prefWidth="122.0" styleClass="mybutton" stylesheets="@styles.css" text="GET STARTED" textFill="#d2a694" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

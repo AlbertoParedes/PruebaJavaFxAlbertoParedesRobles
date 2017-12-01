@@ -1,0 +1,11 @@
+.mybutton {
+	-fx-border-color:  #d2a694;
+	-fx-border-radius: 10px;
+	-fx-border-width:  1;
+}
+
+.imagePane {
+	-fx-background-image: url("assets/images/freesolo.png");
+	-fx-background-repeat: no-repeat;
+}
+
