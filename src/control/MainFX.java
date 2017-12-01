@@ -10,14 +10,14 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-
-
-public class MainFX extends Application {
 /**
  * @author	Alberto Paredes
  * @version 1.0
  * 
  */
+
+public class MainFX extends Application {
+
 	private Stage openStage;
 	private BorderPane rootLayout;
 
